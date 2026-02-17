@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Mockup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="phone">
+    
+    <!-- MAIN PROFILE SCREEN -->
+    <div class="screen active" id="main-profile">
+      <div class="ig-topbar">
+        <span class="ig-username-top">s6toru</span>
+      </div>
+      
+      <div class="ig-content">
+        <div class="ig-profile-header">
+          <img src="https://i.pinimg.com/736x/e4/75/32/e4753255239958cebba83fbe1e5cdd09.jpg" alt="Profile" class="ig-pfp">
+          
+          <div class="ig-stats-row">
+            <div class="ig-stat">
+              <span class="ig-stat-num">6</span>
+              <span class="ig-stat-label">posts</span>
+            </div>
+            <div class="ig-stat">
+              <span class="ig-stat-num">10.2k</span>
+              <span class="ig-stat-label">followers</span>
+            </div>
+            <div class="ig-stat clickable" data-screen="following-list">
+              <span class="ig-stat-num">200</span>
+              <span class="ig-stat-label">following</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ig-profile-info">
+          <p class="ig-name">satoru <span style="color: #8e8e8e;">he/him</span></p>
+          <p class="ig-bio">kappa sigma<br>here for a good time not a long time<br>bff looking 4 hoes<span style="color: #00376b;"> @suuuguru</span></p>
+          <p class="ig-threads">@ s6toru</p>
+          <p class="ig-followed-by">Followed by <strong>shokorette</strong>, <strong>utah1me</strong> and 11 others</p>
+        </div>
+        
+        <div class="ig-buttons">
+          <button class="ig-btn-primary">Following</button>
+          <button class="ig-btn-secondary">Message</button>
+        </div>
+        
+        <!-- HIGHLIGHTS -->
+        <div class="ig-highlights">
+          <div class="ig-highlight clickable" data-screen="story-1">
+            <div class="ig-highlight-circle" style="background-image: url('https://i.pinimg.com/736x/3b/43/54/3b4354485c1942044a0a3a33458f757b.jpg');"></div>
+            <span class="ig-highlight-label">sweets</span> 
+          </div>
+          <div class="ig-highlight clickable" data-screen="story-2">
+            <div class="ig-highlight-circle" style="background-image: url('https://i.pinimg.com/736x/f3/bb/6e/f3bb6eab016ad9402650244645334a31.jpg');"></div>
+            <span class="ig-highlight-label">LITTY</span>
+          </div>
+          <div class="ig-highlight clickable" data-screen="story-3">
+            <div class="ig-highlight-circle" style="background-image: url('https://i.pinimg.com/1200x/78/e2/ed/78e2ed2205a6bc9aec827eaf6466ab50.jpg');"></div>
+            <span class="ig-highlight-label">rich</span>
+          </div>
+          <div class="ig-highlight clickable" data-screen="story-4">
+            <div class="ig-highlight-circle" style="background-image: url('https://i.pinimg.com/736x/2e/15/6e/2e156ee4712b4496b6b6c00fcc43a9b3.jpg');"></div>
+            <span class="ig-highlight-label">motherland</span>
+          </div>
+        </div>
+        
+        <!-- POSTS GRID -->
+        <div class="ig-grid">
+          <div class="ig-grid-item clickable" data-screen="post-1" style="background-image: url('https://i.pinimg.com/736x/6a/a5/ef/6aa5ef0c80f75b32322579193c4e331d.jpg');"></div>
+          <div class="ig-grid-item clickable" data-screen="post-2" style="background-image: url('https://i.pinimg.com/1200x/10/f5/4b/10f54bf8a33d1a1867b5a43495777090.jpg');"></div>
+          <div class="ig-grid-item clickable" data-screen="post-3" style="background-image: url('https://i.pinimg.com/736x/b9/ab/9f/b9ab9f1abf60d667c593e48ea0bc3fd5.jpg');"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOLLOWING LIST SCREEN -->
+    <div class="screen" id="following-list">
+      <div class="ig-topbar">
+        <button class="back-btn" data-back="main-profile">←</button>
+        <span class="ig-username-top">Following</span>
+      </div>
+      
+      <div class="ig-content">
+        <div class="ig-following-item clickable" data-screen="profile-2">
+          <img src="https://via.placeholder.com/40" alt="Profile" class="ig-following-pfp">
+          <div class="ig-following-info">
+            <span class="ig-following-username">jasminescopy</span>
+          </div>
+          <button class="ig-follow-btn">Follow</button>
+        </div>
+        
+        <div class="ig-following-item">
+          <img src="https://via.placeholder.com/40" alt="Profile" class="ig-following-pfp">
+          <div class="ig-following-info">
+            <span class="ig-following-username">brooklynk.nguyen</span>
+            <span class="ig-following-name">Brooklyn Nguyen</span>
+          </div>
+          <button class="ig-follow-btn">Follow</button>
+        </div>
+        
+        <div class="ig-following-item">
+          <img src="https://via.placeholder.com/40" alt="Profile" class="ig-following-pfp">
+          <div class="ig-following-info">
+            <span class="ig-following-username">thatsbonkas</span>
+            <span class="ig-following-name">kalli</span>
+          </div>
+          <button class="ig-follow-btn">Follow</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- STORY SCREEN 1 -->
+    <div class="screen" id="story-1">
+      <button class="back-btn-story" data-back="main-profile">✕</button>
+      
+      <div class="story-bars">
+        <div class="story-bar active" data-story="0"></div>
+        <div class="story-bar" data-story="1"></div>
+        <div class="story-bar" data-story="2"></div>
+      </div>
+      
+      <div class="story-container">
+        <div class="story-slide active">
+          <img src="https://i.pinimg.com/736x/47/52/28/4752286cb4bea3627e117924becebf74.jpg" alt="Story 1" class="story-img">
+        </div>
+        <div class="story-slide">
+          <img src="https://i.pinimg.com/1200x/7e/0c/3f/7e0c3fca556f9af3c72681df4ac1d222.jpg" alt="Story 2" class="story-img">
+          <p class="story-caption">busted a nut</p>
+        </div>
+        <div class="story-slide">
+          <img src="https://i.pinimg.com/736x/b2/49/4f/b2494f7ffd25853edbe48393dfd92b53.jpg" alt="Story 3" class="story-img">
+        </div>
+      </div>
+      
+      <div class="story-nav">
+        <div class="story-nav-left"></div>
+        <div class="story-nav-right"></div>
+      </div>
+    </div>
+    
+    <!-- STORY SCREEN 2 -->
+    <div class="screen" id="story-2">
+      <button class="back-btn-story" data-back="main-profile">✕</button>
+      
+      <div class="story-bars">
+        <div class="story-bar active" data-story="0"></div>
+        <div class="story-bar" data-story="1"></div>
+      </div>
+      
+      <div class="story-container">
+        <div class="story-slide active">
+          <img src="https://i.pinimg.com/736x/7f/63/f0/7f63f0aa304e15c10f754ba72e537714.jpg" alt="Story 1" class="story-img">
+          <p class="story-caption">welcome week</p>
+        </div>
+        <div class="story-slide">
+          <img src="https://i.pinimg.com/736x/dc/a1/a5/dca1a56c9979f946407b03805914c31f.jpg" alt="Story 2" class="story-img">
+          <p class="story-caption">Highlight 2 - Slide 2</p>
+        </div>
+      </div>
+      
+      <div class="story-nav">
+        <div class="story-nav-left"></div>
+        <div class="story-nav-right"></div>
+      </div>
+    </div>
+    
+    <!-- STORY SCREEN 3 (add your content) -->
+    <div class="screen" id="story-3">
+      <button class="back-btn-story" data-back="main-profile">✕</button>
+      
+      <div class="story-bars">
+        <div class="story-bar active" data-story="0"></div>
+      </div>
+      
+      <div class="story-container">
+        <div class="story-slide active">
+          <img src="https://via.placeholder.com/400x700" alt="Story 1" class="story-img">
+          <p class="story-caption">Story 3</p>
+        </div>
+      </div>
+      
+      <div class="story-nav">
+        <div class="story-nav-left"></div>
+        <div class="story-nav-right"></div>
+      </div>
+    </div>
+    
+    <!-- STORY SCREEN 4 (add your content) -->
+    <div class="screen" id="story-4">
+      <button class="back-btn-story" data-back="main-profile">✕</button>
+      
+      <div class="story-bars">
+        <div class="story-bar active" data-story="0"></div>
+      </div>
+      
+      <div class="story-container">
+        <div class="story-slide active">
+          <img src="https://via.placeholder.com/400x700" alt="Story 1" class="story-img">
+          <p class="story-caption">Story 4</p>
+        </div>
+      </div>
+      
+      <div class="story-nav">
+        <div class="story-nav-left"></div>
+        <div class="story-nav-right"></div>
+      </div>
+    </div>
+    
+    <!-- POST SCREEN 1 -->
+    <div class="screen" id="post-1">
+      <div class="ig-topbar">
+        <button class="back-btn" data-back="main-profile">←</button>
+        <span class="ig-username-top">s6toru</span>
+      </div>
+      
+      <div class="ig-content">
+        <div class="ig-post-header">
+          <img src="https://i.pinimg.com/736x/e4/75/32/e4753255239958cebba83fbe1e5cdd09.jpg" alt="Profile" class="ig-post-pfp">
+          <span class="ig-post-username">s6toru</span>
+        </div>
+        
+        <div class="ig-post-image-wrapper">
+          <img src="https://i.pinimg.com/736x/a0/4e/9a/a04e9a69078d87626999a05c8420225c.jpg" alt="Post" class="ig-post-img">
+        </div>
+        
+        <div class="ig-post-actions">
+          <span>❤️</span>
+          <span>💬</span>
+          <span>✈️</span>
+        </div>
+        
+        <div class="ig-post-likes">
+          <strong>8,932 likes</strong>
+        </div>
+        
+        <div class="ig-post-caption">
+          <strong>s6toru</strong> my ride or dies 
+        </div>
+        
+        <div class="ig-post-comments">
+          <div class="ig-comment">
+            <strong>shokorette</strong> who's the baddie on the right 🤤🤤🤤
+          </div>
+          <div class="ig-comment">
+            <strong>suuuguru</strong> guess who convinced him to post these
+          </div>
+          <div class="ig-comment">
+            <strong>art creds</strong> to k4enyu on ig
+          </div>
+        </div>
+        
+        <div class="ig-post-date">February 17, 2025</div>
+      </div>
+    </div>
+    
+    <!-- POST SCREEN 2 -->
+    <div class="screen" id="post-2">
+      <div class="ig-topbar">
+        <button class="back-btn" data-back="main-profile">←</button>
+        <span class="ig-username-top">s6toru</span>
+      </div>
+      
+      <div class="ig-content">
+        <div class="ig-post-header">
+          <img src="https://i.pinimg.com/736x/e4/75/32/e4753255239958cebba83fbe1e5cdd09.jpg" alt="Profile" class="ig-post-pfp">
+          <span class="ig-post-username">s6toru</span>
+        </div>
+        
+        <div class="ig-post-image-wrapper">
+          <img src="https://i.pinimg.com/1200x/10/f5/4b/10f54bf8a33d1a1867b5a43495777090.jpg" alt="Post" class="ig-post-img">
+        </div>
+        
+        <div class="ig-post-actions">
+          <span>❤️</span>
+          <span>💬</span>
+          <span>✈️</span>
+        </div>
+        
+        <div class="ig-post-likes">
+          <strong>5,729 likes</strong>
+        </div>
+        
+        <div class="ig-post-caption">
+          <strong>s6toru</strong> hacked by suguru
+        </div>
+
+        <div class="ig-post-comments">
+          <div class="ig-comment">
+            <strong>suuuguru</strong> i didn't hack anyone btw
+          </div>
+          <div class="ig-comment">
+            <strong>utah1me</strong> chopped ass hoe on the right
+          </div>
+          <div class="ig-comment">
+            <strong>art creds</strong> to hiikeu on twt
+          </div>
+        </div>
+        
+        <div class="ig-post-date">March 03, 2025</div>
+      </div>
+    </div>
+
+    <!-- POST SCREEN 3 -->
+    <div class="screen" id="post-3">
+      <div class="ig-topbar">
+        <button class="back-btn" data-back="main-profile">←</button>
+        <span class="ig-username-top">s6toru</span>
+      </div>
+
+      <div class="ig-content">
+        <div class="ig-post-header">
+          <img src="https://i.pinimg.com/736x/e4/75/32/e4753255239958cebba83fbe1e5cdd09.jpg" alt="Profile" class="ig-post-pfp">
+          <span class="ig-post-username">s6toru</span>
+        </div>
+
+        <div class="ig-post-image-wrapper">
+          <img src="https://i.pinimg.com/736x/b9/ab/9f/b9ab9f1abf60d667c593e48ea0bc3fd5.jpg" alt="Post" class="ig-post-img">
+        </div>
+
+        <div class="ig-post-actions">
+          <span>❤️</span>
+          <span>💬</span>
+          <span>✈️</span>
+        </div>
+
+        <div class="ig-post-likes">
+          <strong>5,729 likes</strong>
+        </div>
+
+        <div class="ig-post-caption">
+          <strong>s6toru</strong> truth nuke
+        </div>
+
+        <div class="ig-post-comments">
+          <div class="ig-comment">
+            <strong>utah1me</strong> u get no pussy so i'm confused by this post
+          </div>
+          <div class="ig-comment">
+            <strong>s6toru</strong> @utah1me ur mad bcs i get more pussy than u 👅👅
+          </div>
+        </div>
+
+        <div class="ig-post-date">March 10, 2025</div>
+      </div>
+    </div>
+    
+    <!-- NESTED PROFILE (Profile 2) -->
+    <div class="screen" id="profile-2">
+      <div class="ig-topbar">
+        <button class="back-btn" data-back="following-list">←</button>
+        <span class="ig-username-top">jasminescopy</span>
+      </div>
+      
+      <div class="ig-content">
+        <div class="ig-profile-header">
+          <img src="https://via.placeholder.com/90" alt="Profile" class="ig-pfp">
+          
+          <div class="ig-stats-row">
+            <div class="ig-stat">
+              <span class="ig-stat-num">12</span>
+              <span class="ig-stat-label">posts</span>
+            </div>
+            <div class="ig-stat">
+              <span class="ig-stat-num">345</span>
+              <span class="ig-stat-label">followers</span>
+            </div>
+            <div class="ig-stat">
+              <span class="ig-stat-num">198</span>
+              <span class="ig-stat-label">following</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ig-profile-info">
+          <p class="ig-name">Jasmine</p>
+          <p class="ig-bio">Just living my best life ✨</p>
+        </div>
+        
+        <div class="ig-buttons">
+          <button class="ig-btn-primary">Follow</button>
+          <button class="ig-btn-secondary">Message</button>
+        </div>
+        
+        <!-- POSTS GRID -->
+        <div class="ig-grid">
+          <div class="ig-grid-item" style="background-image: url('https://via.placeholder.com/400');"></div>
+          <div class="ig-grid-item" style="background-image: url('https://via.placeholder.com/400');"></div>
+          <div class="ig-grid-item" style="background-image: url('https://via.placeholder.com/400');"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
