@@ -63,3 +63,11 @@ function navigateStory(storyScreen, direction) {
     }
   });
 }
+
+function wakePhone() {
+  const lockScreen = document.getElementById('lock-screen');
+  lockScreen.style.opacity = '0';
+  setTimeout(() => {
+    lockScreen.style.display = 'none';
+  }, 800);
+}
