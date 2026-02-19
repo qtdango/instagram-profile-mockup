@@ -471,3 +471,13 @@ body {
   0%, 100% { transform: scale(1); opacity: 0.5; }
   50% { transform: scale(1.2); opacity: 1; }
 }
+
+/* HIDE SCROLLBAR */
+
+.screen {
+  scrollbar-width: none; /* Firefox */
+}
+
+.screen::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
